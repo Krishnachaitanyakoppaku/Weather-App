@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         textViewError.visibility = View.GONE
 
         // Simple approach: hardcode API key
-        val apiKey = "5cd0edc9a497bc46a2e016c084686176"  // Replace with your OpenWeatherMap API key
+        val apiKey = "API Key"  // Replace with your OpenWeatherMap API key
         val url = "https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$apiKey&units=metric"
 
         val jsonObjectRequest = JsonObjectRequest(
