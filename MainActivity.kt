@@ -62,6 +62,8 @@ class MainActivity : AppCompatActivity() {
             Request.Method.GET, url, null,
             { response ->
                 progressBar.visibility = View.GONE
+                // Print full JSON response in Logcat
+                println("API Response: $response")
                 try {
                     val main = response.getJSONObject("main")
                     val temperature = main.getDouble("temp")
